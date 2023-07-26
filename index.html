@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Formulario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!--Título-->
+    <div class="container pt-2 pb-2 ps-4 border">
+        <h1>Payment form example</h1>
+    </div>
+
+    <!--Caja principal-->
+    <div class="container border">
+        <!--Advertencia-->
+        <div class="container ps-4 pe-4">
+            <div class="row p-2">
+                <p class="text-danger p-3 border border-danger rounded" id="alerta">Some fields are missing</p>
+            </div>
+        </div>
+
+        <!--Primera fila-->
+        <div class="container">
+            <div class="row">
+
+                <!--Tarjeta-->
+                <div class="col-4 ps-4">
+                    <form>
+                        <label for="card">Card #</label><br>
+                        <input type="password" id="card" name="card" placeholder="XXXXXXXXXXXXXXXX">
+                    </form>
+                </div>
+
+                <!--CVC-->
+                <div class="col-4">
+                    <form>
+                        <label for="cvc">CVC #</label><br>
+                        <input type="text" id="cvc" name="cvc" placeholder="0000">
+                    </form>
+                </div>
+
+                <!--Cantidad-->
+                <div class="col-4">
+                    <form>
+                        <label for="amount">Amount</label><br>
+                        <input type="text" id="amount" name="amount" placeholder="Amount">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!--Segunda fila-->
+        <div class="container">
+            <div class="row">
+
+                <!--Nombre-->
+                <div class="col-6 ps-4 pt-4">
+                    <form>
+                        <label for="name">First Name</label><br>
+                        <input type="text" id="name" name="name">
+                    </form>
+                </div>
+
+                <!--Apellido-->
+                <div class="col-6 pt-4">
+                    <form>
+                        <label for="lastname">Last Name</label><br>
+                        <input type="text" id="lastname" name="lastname">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!--Tercera fila-->
+        <div class="container">
+            <div class="row">
+
+                <!--Ciudad-->
+                <div class="col-6 ps-4 pt-4">
+                    <form>
+                        <label for="city">City</label><br>
+                        <input type="text" id="city" name="city">
+                    </form>
+                </div>
+
+                <!--Estado-->
+                <div class="col-3 pt-4">
+                    <form>
+                        <label for="state">State</label><br>
+                        
+                        <select class="form-select form-select-md" id="state" name="state">
+                            <option selected>Pick a state</option>
+                            <option value="statea">State A</option>
+                            <option value="stateb">State B</option>
+                            <option value="statec">State C</option>
+                            <option value="stated">State D</option>
+                        </select>
+
+                    </form>
+                </div>
+
+                <!--Codigo Postal-->
+                <div class="col-3 pt-4">
+                    <form>
+                        <label for="postalcode">Postal Code</label><br>
+                        <input type="text" id="postalcode" name="postalcode">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!--Tercera fila-->
+        <div class="container">
+            <div class="row">
+
+                <!--Pago-->
+                <div class="col-6 ps-4 pt-4">
+                    <form>
+                        <hp>We accept:</hp><br>
+                        <div class="form-group bg-secondary border rounded p-2">
+
+                            <input type="radio" id="car1" name="card1" value="card1">
+                            <label for="card1"><i class="bi bi-credit-card"></i></label>
+
+                            <input type="radio" id="car2" name="card2" value="card2">
+                            <label for="card2"><i class="bi bi-credit-card-2-back"></i></label>
+
+                            <input type="radio" id="car3" name="card3" value="card3">
+                            <label for="card3"><i class="bi bi-credit-card-2-back-fill"></i></label>
+
+                            <input type="radio" id="car4" name="card4" value="card4">
+                            <label for="card4"><i class="bi bi-credit-card-2-front"></i></label>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-6 pt-4">
+                    <form>
+                        <ph><label for="message">Message</label></ph>
+                        <textarea id="message" name="message"></textarea><br>
+                        <p id="sub">Add any notes here.</p>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Caja inferior-->
+    <div class="container border p-4 d-flex justify-content-end">
+        <button type="button" class="btn btn-secondary">Cancel</button>
+        <button type="button" class="btn btn-primary">Send</button>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>    
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+#alerta {
+    background-color: #F8D7DA;
+}
+
+#card, #cvc, #amount, #name, #lastname, #city, #state, #postalcode {
+    width: 100%;
+    border: 1px solid #D5DBE0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+i {
+    font-size: large;
+    color: #ffffff;
+}
+
+#sub {
+    color: #5a5a5a;
+}
+
+#message {
+    width: 100%;
+}
